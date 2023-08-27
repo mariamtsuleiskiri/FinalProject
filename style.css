@@ -1,5 +1,7 @@
-body{
+*{
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 .head-wrapper{
     background-image: url(hero\ shape.png);
@@ -8,11 +10,18 @@ body{
     background-position: left top;
     height:697px;
 }
+header{
+    max-width: 1240px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
 address{
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    width: 1240px;
     height: 62px;
+    padding-left: 72px;
+    padding-right: 72px;
     flex-shrink: 0;
     align-items: center;
     box-sizing: border-box;
@@ -25,7 +34,6 @@ address{
     align-items: flex-start;
     gap: 30px;
     width: 373px;
-    margin-left: 72px;
 }
 .location-active-component p{
     color: #355EFC;
@@ -66,11 +74,10 @@ address{
     display: flex;
     width: 311px;
     align-items: flex-end;
-    gap: 65px;
     color: #355EFC;
-    margin-right: 72px;
     font-weight: 300;
     line-height: normal;
+    gap:65px;
 }
 .mail{
     display: flex;
@@ -95,35 +102,36 @@ address{
 .phone p{
     display: flex;
     width: 106px;
-    flex-direction: column;
     justify-content: center;
 }
 .logo-menu-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 5px;
+    padding-top: 25px;
+
 }
 .finanza{
-    margin-left: 50px;
+    margin-left: -22px;
     color: var(--main-color, #355EFC);
-text-align: center;
-font-family: Jost;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 58px; /* 120.833% */
+    text-align: center;
+    font-family: Jost;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; /* 120.833% */
 }
 .main-menu{
     display: flex;
-    width: 611px;
+    width: 620px;
     height: 50px;
     align-items: center;
     gap: 61px;
     flex-shrink: 0;
-    margin-right: 72px;
+    padding-right: 4px;
+
 }
-.main-menu ul{
+.menu{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
@@ -135,15 +143,42 @@ line-height: 58px; /* 120.833% */
     gap: 15px;
     flex-shrink: 0;
 }
+.menu li{
+    position: relative;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+}
+/*.main-menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    width: 424px;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}*/
 .main-menu ul li{
-    display: inline;
+    
     font-family:'Courier New', Courier, monospace;
     font-size: 16px;
     text-align: center;
 }
-.main-menu a{
-    text-decoration: none;
-    
+.dropdown a:visited{
+    color: #355EFC;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 .social-icons{
     display: flex;
@@ -154,11 +189,10 @@ line-height: 58px; /* 120.833% */
     flex: 1 0 0;
 }
 .header-left{
-    display: inline-flex;
+   display: inline-flex;
    flex-direction: column;
    align-items: flex-start;
    padding-top:60px;
-   padding-left:72px;
    gap:25px;
 }
 .welcome-button{
