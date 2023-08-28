@@ -145,23 +145,19 @@ address{
 }
 .menu li{
     position: relative;
+    padding-top: 2px;
+    background: linear-gradient(blue,blue);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: all 0.45s;
+}
+.menu li:hover{
+    background-size: 100% 2px;
 }
 .menu a{
     display: block;
     text-decoration: none;
 }
-/*.main-menu ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    display: flex;
-    width: 424px;
-    align-items: center;
-    gap: 15px;
-    flex-shrink: 0;
-}*/
 .main-menu ul li{
     
     font-family:'Courier New', Courier, monospace;
@@ -188,6 +184,44 @@ address{
     gap: 10px;
     flex: 1 0 0;
 }
+.facebook-icon{
+    position: relative;
+    display: inline-block;
+}
+ellipse{
+    fill:#e6e6e6;
+}
+.facebook-icon:hover .facebook-ellipse{
+    fill:#3b5999;
+    transition:fill 0.3s ease-in-out;
+}
+.facebook-icon:hover .facebook-svg{
+    fill:#FFF;
+    transition: fill 0.3s ease-in-out;
+}
+.facebook-svg,
+.twitter-svg,
+.linked-svg{
+    fill:#355EFC;
+}
+.twitter-icon:hover .twitter-ellipse{
+    fill:#55acee;
+    transition:fill 0.3s ease-in-out;
+}
+.twitter-icon:hover .twitter-svg{
+    fill:#ffffff;
+    transition:fill 0.3s ease-in-out;
+}
+.linked-icon:hover .linked-ellipse{
+    fill:#0077b5;
+    transition:fill 0.3s ease-in-out;
+    
+}
+.linked-icon:hover .linked-svg{
+    fill:#FFF;
+    transition:fill 0.3s ease-in-out;
+}
+
 .header-left{
    display: inline-flex;
    flex-direction: column;
@@ -231,4 +265,58 @@ address{
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+}
+.about-content{
+    display: flex;
+    margin-left: 72px;
+    padding:0;
+    gap:24px;
+}
+.image-container{
+    display: flex;
+    width:660px;
+    height:600px;
+    background-image:url('about-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.about-right{
+    display: flex;
+    gap:19px;
+    width: 550px;
+    height:372px ;
+    flex-direction: column;
+    margin-top:40px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.about-button{
+    display: flex;
+padding: 10px 15px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.h2-about{
+    align-self: stretch;
+    font-size: 3.5vw;
+    color:#011A41;
+    flex:1;
+    max-width: 100%;
+}
+.about-header{
+    display: flex;
+}
+.about-p {
+    font-size: 16px;
+    line-height:24px;
+    align-self: stretch;
+    letter-spacing: 2px;
+    text-align: justify;
 }
