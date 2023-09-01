@@ -393,3 +393,36 @@ gap: 10px;
     font-size: 16px;
     line-height: 24px;
 }
+.statistics{
+    width:100%;
+    padding-top:45px;
+}
+.statistics-wrapper{
+    padding: 30px;
+    align-items: center;
+    grid-column-gap: 5px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    max-width: 1200px;
+    background-color: #355EFC;
+}
+.statistics-column{
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.statistics-text-wrapper{
+    color:white;
+    display:flex;
+    gap:12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.number-text{
+    font-size:52px;
+    line-height:67px;
+    font-weight:700;
+}
