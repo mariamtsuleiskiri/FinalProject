@@ -110,6 +110,28 @@
                 </button>
             </div>
             </header>
+            <div class="slider-container">
+                <div class="carousel">
+                <div class="slider">
+                    <section><img  class="first-slider-image" src="slider-image-one.png"> </section>
+                    <section><img class="second-slider-image" src="slider-image-two.png"> </section>
+                    <section><img class="third-slider-image" src="slider-image-three.png"> </section>
+                    <section><img class="fourth-slider-image" src="slider-image-four.png"> </section>
+                </div>
+                <div class="controls">
+                    <div class="arrow-left">
+                        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 28 36" >
+                            <path d="M27.5 3.62879L23.3817 0.5L0.5 18L23.4049 35.5L27.5 32.3712L8.69023 18L27.5 3.62879Z" fill="#355EFC"/>
+                          </svg>
+                    </div>
+                    <div class="arrow-right">
+                        <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="36" viewBox="0 0 28 36">
+                            <path d="M0.5 3.62879L4.61825 0.5L27.5 18L4.59512 35.5L0.5 32.3712L19.3098 18L0.5 3.62879Z" fill="#355EFC"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
         <div class="about-content">
@@ -117,7 +139,7 @@
             <div class="image-container">
                 <img src="about-image.png" alt="alternatetext" class="about-image-class">
             </div>
-            <div class="about-right">
+            <div class="about-right-wrapper">
                 <button class="about-button">
                     About Us
                 </button>
@@ -127,8 +149,14 @@
                <div class="about-p">
                 <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                </div>
+               <div class="about-last">
+                    <div class="story">Story</div>
+                    <div class="Mission">Mission
+                    </div>
+                    <div class="Vission">Vission</div>
+                </div>
             </div>
-            
+            </div>
          </div>
         </div>
         <div class="about-bottom">
@@ -254,6 +282,28 @@
                 </div>
             </div>
         </div>
+        <script>
+            let slider= document.querySelector('.slider');
+            let leftArrow= document.querySelector('.arrow-left');
+            let rightArrow= document.querySelector('.arrow-right');
+            let sectionIndex = 0;
+            rightArrow.addEventListener('click', function(){
+                if (sectionIndex < 3) {
+                sectionIndex = sectionIndex + 1;
+                } else {
+                  sectionIndex = 3;
+                };
+                slider.style.transform = 'translate('+(sectionIndex) * -25 + '%)';
+            });
+            leftArrow.addEventListener('click', function(){
+                if (sectionIndex > 0) {
+                sectionIndex = sectionIndex - 1;
+                } else {
+                  sectionIndex = 0;
+                };
+                slider.style.transform = 'translate('+(sectionIndex) * -25 + '%)';
+            });
+        </script>
 
 
     </body>
