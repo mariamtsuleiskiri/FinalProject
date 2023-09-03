@@ -4,6 +4,14 @@
     box-sizing: border-box;
     
 }
+p{
+    font-family: 'Poppins', sans-serif;
+}
+.open-sans-bold{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
 .header-div{
     width: 100%;
 }
@@ -27,15 +35,19 @@ address{
     padding-right: 72px;
     flex-shrink: 0;
     align-items: center;
-    gap:352px;
-    
     border-bottom: 1px solid rgba(0, 0, 0, 0.01);
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.11);
+    justify-content: space-between;
+    gap:300px;
+}
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
 }
 .location-active-component {
     font-style:normal;
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     gap: 30px;
     width: 373px;
 }
@@ -76,25 +88,18 @@ address{
 .info-component{
     font-style: normal;
     display: flex;
-    width: 311px;
-    align-items: flex-end;
+    align-items: center;
+    justify-content:end;
     color: #355EFC;
     font-weight: 300;
     line-height: normal;
-    gap:65px;
+    gap:30px;
 }
 .mail{
     display: flex;
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
-}
-.mail p{
-    display: flex;
-    width: 125px;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
 }
 .phone{
     display: flex;
@@ -103,17 +108,17 @@ address{
     gap: 10px;
     flex: 1 0 0;
 }
-.phone p{
+.phone-number{
+    white-space: nowrap;
     display: flex;
-    width: 106px;
     justify-content: center;
 }
 .logo-menu-wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: end;
     padding-top: 25px;
-    gap:306px;
+    gap:200px;
 
 }
 .finanza{
@@ -123,7 +128,7 @@ address{
     font-family: Jost;
     font-size: 48px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 58px; /* 120.833% */
 }
 .main-menu{
@@ -333,7 +338,7 @@ ellipse{
 }
 .financial-header{
     width: 740px;
-    font-size: 88px;
+    font-size: 40px;
     line-height: 96px;
     font-weight: 700;
     font-family: Open Sans;
@@ -359,7 +364,6 @@ ellipse{
 }
 .about-content-wrapper{
     display: grid;
-    grid-column-gap:24px;
     grid-template-columns: auto 1fr;
     padding-left: 72px;
     padding-right: 36px;
@@ -378,7 +382,6 @@ ellipse{
 .about-right-wrapper{
     display: flex;
     gap:19px;
-    width: 550px;
     height:372px ;
     flex-direction: column;
     margin-top:40px;
@@ -394,13 +397,12 @@ ellipse{
 }
 .about-header{
     display: flex;
+    box-sizing: border-box;
 }
 .about-p {
     font-size: 16px;
     line-height:24px;
-    align-self: stretch;
-    letter-spacing: 2px;
-    text-align: justify;
+    color:#555;
 }
 .about-bottom{
     width: 100%;
@@ -523,7 +525,7 @@ ellipse{
     max-width: 1200px;
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 21px;
+    grid-column-gap: 10px;
     padding-bottom: 70px;
 }
 .why-choose-main{
@@ -544,6 +546,7 @@ ellipse{
     align-items: center;
     gap: 10px;
     color:#355EFC;
+    font-size: 14px;
 }
 .classic-button:hover{
     cursor: pointer;
@@ -552,7 +555,7 @@ ellipse{
     color:white;
 }
 .why-choose-header-text{
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 700;
 }
 .why-choose-p{
@@ -567,6 +570,7 @@ ellipse{
     background:#355EFC;
     color:white;
     border:none;
+    font-size: 14px;
 }
 .classic-button-blue:hover{
     cursor: pointer;
@@ -584,7 +588,6 @@ ellipse{
 }
 .fast-column{
     display: flex;
-    width: 218px;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -597,17 +600,25 @@ ellipse{
     display:flex;
     gap:10px;
     color:#355EFC;
+    font-size: 14px;
 }
 .fast-p{
     color:#555;
+    font-size: 14px;
+}
+.fast-p-two{
+    font-size: 14px;
+}
+.jost{
+    font-family: 'Jost', sans-serif;
 }
 .fast-header{
-    font-size:24px;
+    font-size:20px;
     font-weight: 700;
+    font-family: 'Jost',sans-serif;
 }
 .fast-column-two{
     display: flex;
-    width: 218px;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -625,6 +636,7 @@ ellipse{
     color:white;
     display:flex;
     gap:10px;
+    font-size: 14px;
 }
 .fast-arrow-svg{
     fill:white;
@@ -643,11 +655,18 @@ ellipse{
     padding-top: 28px;
     padding-left: 72px;
     padding-right:72px;
+    padding-bottom:85px;
+}
+.services-header{
+    font-size:28px;
+    width:500px;
+    text-align: center;
 }
 .services-button-header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap:22px;
 }
 .services-main{
@@ -665,22 +684,28 @@ ellipse{
     display: flex;
     flex-direction: row;
     background-color: #355EFC;
-    padding: 20px;
+    padding: 10px 16px;
     justify-content:flex-start;
     align-items: center;
     gap: 15px;
-    flex: 1 0 0;
     align-self: stretch;
     border-radius: 10px;
     color:white;
+    flex:1 0 0;
+}
+.financial-tab-blue p{
+    font-size: 20px;
+}
+.financial-tab-white p{
+    font-size: 20px;
 }
 .financial-tab-white{
     display: flex;
-    padding: 20px;
+    padding: 10px 16px;
     justify-content:flex-start;
     align-items: center;
     gap: 15px;
-    flex: 1 0 0;
+    flex:1 0 0;
     align-self: stretch;
     border-radius: 10px;
     color:black;
@@ -697,8 +722,20 @@ ellipse{
     padding-top:64px;
 }
 .tab-right-header{
-    font-size:28px;
-    font-weight: 700;
+    font-size:26px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+.tab-right-p{
+    font-size:16px;
+    color:#555;
+    line-height: 24px;
+    display: flex;
+    align-self: stretch;
+    flex-shrink: 0;
+    flex:1 0 0;
 }
 .tab-right-advice{
     display: flex;
@@ -709,4 +746,42 @@ ellipse{
     display:flex;
     flex-direction: row;
     gap:10px;
+}
+.request-callback{
+    width: 100%;
+}
+.request-callback-wrapper{
+    max-width: 1200px;
+}
+.blue{
+    background-color: #355EFC;
+    height:350px;
+    position: relative;
+    display: flex;
+}
+.request-main{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--Icon-background, #909DE2);
+}
+input{
+    display: flex;
+    height: 52px;
+    padding: 15px 1px 15px 10px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 5px;
+    border: 1px solid var(--Icon-background, #909DE2);
+
+}
+.form-wrapper{
+    display:flex;
+    gap:23px;
+
 }
