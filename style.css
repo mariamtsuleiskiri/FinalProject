@@ -642,6 +642,7 @@ ellipse{
     max-width: 1200px;
     padding-top: 28px;
     padding-left: 72px;
+    padding-right:72px;
 }
 .services-button-header{
     display: flex;
@@ -687,10 +688,25 @@ ellipse{
 }
 .tab-image{
     padding-top:64px;
+    margin-right:23px;
 }
 .tab-right{
     display: flex;
     flex-direction: column;
     gap:32px;
     padding-top:64px;
+}
+.tab-right-header{
+    font-size:28px;
+    font-weight: 700;
+}
+.tab-right-advice{
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+}
+.advice-column{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
 }
