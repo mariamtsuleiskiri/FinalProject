@@ -161,13 +161,26 @@
                <div class="about-p">
                 <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                </div>
-               <div class="about-last">
-                    <div class="story">Story</div>
-                    <div class="Mission">Mission
-                    </div>
-                    <div class="Vission">Vission</div>
+                <div class="tab">
+                        <button class="tabbutton" onclick="openContent(event,'One')" id="defaultOpen" >Story</button>
+                        <button class="tabbutton" onclick="openContent(event,'Two')" >Mission</button>
+                        <button class="tabbutton" onclick="openContent(event,'Three')">Vission</button>
                 </div>
-            </div>
+                <div id="One" class="tabcontent">
+                    <p> jknljlTempor  ddderat elitr rebum at clita. Diam dolor diam ipsum et tempor sit.Aliqu diam amet diam et eos labore. 
+
+                        Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                </div>
+                <div id="Two" class="tabcontent">
+                    <p> jknljlTempo dddr erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit.Aliqu diam amet diam et eos labore. 
+
+                        Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                </div>
+                <div id="Three" class="tabcontent">
+                    <p> jknljlTem dd dddvb vpor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit.Aliqu diam amet diam et eos labore. 
+
+                        Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
+                </div>
             </div>
          </div>
         </div>
@@ -629,27 +642,7 @@
             </footer>
         </div>
         
-        <script>
-            let slider= document.querySelector('.slider');
-            let leftArrow= document.querySelector('.arrow-left');
-            let rightArrow= document.querySelector('.arrow-right');
-            let sectionIndex = 0;
-            rightArrow.addEventListener('click', function(){
-                if (sectionIndex < 3) {
-                sectionIndex = sectionIndex + 1;
-                } else {
-                  sectionIndex = 3;
-                };
-                slider.style.transform = 'translate('+(sectionIndex) * -25 + '%)';
-            });
-            leftArrow.addEventListener('click', function(){
-                if (sectionIndex > 0) {
-                sectionIndex = sectionIndex - 1;
-                } else {
-                  sectionIndex = 0;
-                };
-                slider.style.transform = 'translate('+(sectionIndex) * -25 + '%)';
-            });
+        <script src="script.js">
         </script>
 
 
