@@ -1,0 +1,132 @@
+.why-choose{
+    width:100%;
+}
+.why-choose-wrapper{
+    padding-left: 70px;
+    padding-right:80px;
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    padding-bottom: 70px;
+}
+.why-choose-main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-top: 140px;
+    width:540px;
+}
+.classic-button{
+    border-radius: 11px;
+    border: 1px solid #CAD2FC;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
+    background-color:white ;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:#355EFC;
+    font-size: 14px;
+}
+.classic-button:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    background-color: #355EFC;
+    color:white;
+}
+.why-choose-header-text{
+    font-size: 24px;
+    font-weight: 700;
+}
+.why-choose-p{
+    color:#555;
+}
+.classic-button-blue{
+    display: flex;
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background:#355EFC;
+    color:white;
+    border:none;
+    font-size: 14px;
+}
+.classic-button-blue:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    background-color: white;
+    color:#355EFC;
+    box-shadow:0px 0px 4px 0px #355EFC;
+}
+.fast-executions-two-columns{
+    padding-top:47px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:24px;
+}
+.fast-column{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid var(--Icon-background, #909DE2);
+}
+.fast-read-more{
+    display:flex;
+    gap:10px;
+    color:#355EFC;
+    font-size: 14px;
+}
+.fast-p{
+    color:#555;
+    font-size: 14px;
+}
+.fast-p-two{
+    font-size: 14px;
+}
+.jost{
+    font-family: 'Jost', sans-serif;
+}
+.fast-header{
+    font-size:20px;
+    font-weight: 700;
+    font-family: 'Jost',sans-serif;
+}
+.fast-column-two{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color:#355EFC;
+    border: 1px solid var(--Icon-background, #909DE2);
+    color:white;
+}
+.fast-svg-two{
+    fill:white;
+}
+.fast-read-more-two{
+    color:white;
+    display:flex;
+    gap:10px;
+    font-size: 14px;
+}
+.fast-arrow-svg{
+    fill:white;
+}
+.fast-executions-last-column{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

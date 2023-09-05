@@ -1,0 +1,40 @@
+.statistics{
+    width:100%;
+    padding-top:45px;
+}
+.statistics-wrapper{
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top:45px;
+    padding-bottom:45px;
+    align-items: center;
+    grid-column-gap: 5px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    max-width: 1200px;
+    background-color: #355EFC;
+}
+.statistics-column{
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.statistics-text-wrapper{
+    color:white;
+    display:flex;
+    gap:12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.number-text{
+    font-size:52px;
+    line-height:67px;
+    font-weight:700;
+}
+.about-last{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}

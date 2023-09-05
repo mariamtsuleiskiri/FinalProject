@@ -1,0 +1,101 @@
+.our-services{
+    width:100%;
+}
+.our-services-wrapper{
+    max-width: 1200px;
+    padding-top: 28px;
+    padding-left: 72px;
+    padding-right:72px;
+    padding-bottom:85px;
+}
+.services-header{
+    font-size:28px;
+    width:500px;
+    text-align: center;
+}
+.services-button-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:22px;
+}
+.services-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.all-services-tab{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    padding-top: 57px;
+    margin-right:16px;
+}
+.financial-tab-blue{
+    display: flex;
+    flex-direction: row;
+    background-color: #355EFC;
+    padding: 10px 16px;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+    border-radius: 10px;
+    color:white;
+    flex:1 0 0;
+}
+.financial-tab-blue p{
+    font-size: 20px;
+}
+.financial-tab-white p{
+    font-size: 20px;
+}
+.financial-tab-white{
+    display: flex;
+    padding: 10px 16px;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 15px;
+    flex:1 0 0;
+    align-self: stretch;
+    border-radius: 10px;
+    color:black;
+    border:1px solid #909DE2;
+}
+.tab-image{
+    padding-top:64px;
+    margin-right:23px;
+}
+.tab-right{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    padding-top:64px;
+}
+.tab-right-header{
+    font-size:26px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+.tab-right-p{
+    font-size:16px;
+    color:#555;
+    line-height: 24px;
+    display: flex;
+    align-self: stretch;
+    flex-shrink: 0;
+    flex:1 0 0;
+}
+.tab-right-advice{
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+}
+.advice-column{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
