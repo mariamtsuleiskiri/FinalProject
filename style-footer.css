@@ -39,6 +39,18 @@ footer{
     gap:15px;
     padding-top:10px;
 }
+.logo-svg{
+    fill:white;
+}
+.icon:hover .circle-svg{
+    fill: #ffffff;
+    cursor: pointer;
+}
+.icon:hover .logo-svg{
+    fill:#011a41;
+    cursor: pointer;
+
+}
 .information-column-two{
     display:flex;
     flex-direction:column;
@@ -102,4 +114,5 @@ footer{
 }
 .signup-container button:hover{
     background-color: #2141c3;
+    cursor: pointer;
 }
