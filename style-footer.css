@@ -127,6 +127,7 @@ footer{
         padding-top: 20px;
         grid-row-gap:20px;
         grid-column-gap:15px ;
+        padding-bottom: 35px;
     }
     .information-column-one{
         grid-column: span 2;
