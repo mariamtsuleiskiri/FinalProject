@@ -99,3 +99,60 @@
     gap:10px;
 }
 
+
+@media only screen and (max-width:414px){
+    .our-services-wrapper{
+        max-width: 414px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 50px;
+    }
+    .services-header{
+        font-size: 20px;
+        width:370px;
+    }
+    .services-main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .financial-tab-blue{
+        flex:0 0 0;
+    }
+    .financial-tab-white{
+        flex:0 0 0;
+    }
+    .financial-tab-blue p{
+        font-size: 8px;
+    }
+    .financial-tab-white p{
+        font-size: 8px;
+    }
+    .financial-tab-blue svg{
+        width:10px;
+    }
+    .financial-tab-white svg{
+        width:10px;
+    }
+    .tab-image{
+        width:250px;
+        height:280px;
+        margin-right: 0;
+    }
+    .tab-image img{
+        width:250px;
+        height: 280px;
+    }
+    .tab-right{
+        grid-column: span 2;
+        gap:17px;
+    }
+    .tab-right-header{
+        font-size: 18px;
+        text-align: center;
+    }
+    .tab-right p{
+        text-align: justify;
+    }
+}
+
+

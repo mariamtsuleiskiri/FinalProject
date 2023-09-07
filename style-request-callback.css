@@ -79,3 +79,35 @@ textarea{
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width:414px){
+    .request-callback-wrapper{
+        max-width: 414px;
+    }
+    .request-main{
+        top:40px;
+        left:15px;
+        padding:15px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        gap:10px;
+        width:387px;
+    }
+    .request-header{
+        font-size: 20px;
+    }
+    form{
+        width: 250px;
+
+    }
+    .input-first-column{
+        flex-direction: column;
+    }
+    .input-second-column{
+        flex-direction: column;
+    }
+    .textarea{
+        width:250px;
+    }
+
+}

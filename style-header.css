@@ -7,6 +7,30 @@
 p{
     font-family: 'Poppins', sans-serif;
 }
+.classic-button{
+    border-radius: 11px;
+    border: 1px solid #CAD2FC;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
+    background-color:white ;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:#355EFC;
+    font-size: 14px;
+}
+.classic-button-blue{
+    display: flex;
+    padding: 10px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background:#355EFC;
+    color:white;
+    border:none;
+    font-size: 14px;
+}
 .open-sans-bold{
     font-family: 'Open Sans',sans-serif;
     font-weight: 600;
@@ -54,8 +78,6 @@ address{
 .location-active-component p{
     color: #355EFC;
     font-size: 14px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
     line-height: normal;
 }
 .location{
@@ -131,6 +153,10 @@ address{
     font-weight: 900;
     line-height: 58px; /* 120.833% */
 }
+.menu-socials{
+    display:flex;
+    gap:20px;
+}
 .main-menu{
     display: flex;
     width: 620px;
@@ -140,6 +166,19 @@ address{
     flex-shrink: 0;
     padding-right: 4px;
 
+}
+.menu-button{
+    display:none;
+    flex-direction: column;
+    cursor:pointer;
+    background: none;
+    border: none;
+}
+.bar{
+    width:25px;
+    height:3px;
+    background-color: #355EFC;
+    margin:3px 0;
 }
 .menu{
     display: flex;
@@ -358,4 +397,230 @@ ellipse{
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+}
+@media only screen and (max-width: 414px) {
+    .header-div{
+        max-width: 414px;
+    }
+    .head-wrapper{
+        max-width:414px;
+        background-color: #ffffff;
+        background-image: url(hero\ shape.png);
+        background-size: 300px 360px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        height:auto;
+        position: relative;
+    }
+    address{
+        padding-top: 10px;
+        display:flex;
+        gap:0px;
+        padding-left:15px;
+        padding-right:15px;
+        flex-direction: row;
+        align-items:center;
+        font-size:8px;
+    }
+    .location-active-component {
+        width:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        gap:2px;
+        align-items: flex-start;
+    }
+    .location-active-component p{
+        font-size:8px;
+    }
+    .location{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content:center;
+        box-sizing: border-box;
+    }
+    .location p{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 0;
+    }
+    .service-time{
+        display:flex;
+        gap:5px;
+        align-items:center;
+        width:auto;
+    }
+    .info-component{
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:space-between;
+        color: #355EFC;
+        font-weight: 300;
+        line-height: normal;
+        gap:3px;
+        width:auto;
+    }
+    .info-component p{
+        font-size: 10px;
+    }
+    .mail{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex: 1 0 0;
+    }
+    .phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex: 1 0 0;
+    }
+    .phone-number{
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+    }
+    header{
+        max-width: 414px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .logo-menu-wrapper{
+        padding-top: 15px;
+        gap:2px;
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        align-items: center;
+    }
+    
+    .finanza{
+        margin-left: 0;
+        padding-left:0px;
+    }
+    .menu-socials{
+        display:none;
+    }
+    a:visited{
+        color:#355EFC;
+    }
+    .menu{
+        
+        justify-content: flex-start;
+    }
+    .menu-button{
+        display:flex;
+    }
+    .main-menu{
+        padding-left:12px;
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+        width:auto;
+        justify-content: space-between;
+    }
+    .show-menu{
+        display: flex;
+        flex-direction: column;
+        z-index:1;
+    }
+    .show-menu li{
+        margin:10px 0;
+    }
+    .show-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: #fff;
+        padding: 15px;
+        width:100%;
+        border-radius: 5px;
+        border: 1px solid #355EFC;
+    }
+    .dropdown{
+        position:relative;
+    }
+    .dropdown .dropdown-content{
+        display:none;
+        position:absolute;
+        top:100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .dropdown:hover .dropdown-content{
+        display: flex;
+
+    }
+    .show menu .social-icons{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+
+    }
+    .header-left{
+        padding-top: 5px;
+        padding-left:10px;
+        max-width:414px;
+        gap:15px;
+    }
+    .welcome-button{
+        font-size:12px;
+        padding:8px;
+    }
+    .financial-header{
+        font-size:18px;
+        width:300px;
+        line-height: normal;
+    }
+    .explore-more-button{
+        font-size:12px;
+        padding:9px;
+    }
+    .carousel{
+        height:300px;
+
+    }
+    .slider section{
+        flex-basis:100%;
+    }
+    .controls .arrow-left{
+        top:60%;
+        width:30px;
+    }
+    .controls .arrow-right{
+        top:59%;
+        width:30px;
+    }
+    .first-slider-image{
+        width: 350px;
+        height:220px;
+        transform:scaleX(-1);
+    }
+    .second-slider-image{
+        width:340px;
+        height: 220px;
+        transform: translateX(35px) translateY(20px);
+    }
+    .third-slider-image{
+        width:380px;
+        transform:translateX(122px);
+    }
+    .fourth-slider-image{
+        width:260px;
+        transform:translateX(70px);
+        height:200px;
+    }
+
 }

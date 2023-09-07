@@ -29,7 +29,7 @@
 }
 .h2-about{
     align-self: stretch;
-    font-size: 3.5vw;
+    font-size: 44px;
     color:#011A41;
     flex:1;
     max-width: 100%;
@@ -85,4 +85,69 @@
 @keyframes fadeEffect{
     from {opacity:0;}
     to {opacity:1;}
+}
+
+
+@media only screen and (max-width: 414px) {
+    .classic-button{
+        font-size: 0.6rem;
+    }
+    .classic-button-blue{
+        font-size: 10px;
+    }
+    .about-content-wrapper{
+        max-width: 414px;
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-column-gap: 10px;
+    }
+    .image-container{
+        width:200px;
+        height: 230px;
+    }
+    .image-container img{
+        transform:translateX(-10px);
+        width:220px;
+        height:auto;
+    }
+    .about-right-wrapper{
+        align-items:left;
+        width:180px;
+        height:auto;
+        margin-top: 25px;
+        gap:12px;
+    }
+    .about-header{
+        width:160px;
+    }
+    .about-header h2{
+        font-size: 0.8rem;
+    }
+    .about-p{
+        font-size: 10px;
+        width: 180px;
+        text-align:left;
+        line-height: 18px;
+    }
+    .tab{
+        transform: translateX(-115px) translateY(13.5px);
+    }
+    .tab button{
+        font-size:10px;
+    }
+    .tabcontent{
+        width: 380px;
+        transform:translateX(-208px);
+        font-size:10px;
+        border-radius:5px;
+        border:2px solid #DEE2E6;
+        border-top:none;
+        padding:12px;
+    }
+
+
+
+
+
+
 }

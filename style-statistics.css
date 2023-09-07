@@ -38,3 +38,31 @@
     display:grid;
     grid-template-columns: repeat(3,1fr);
 }
+
+@media only screen and (max-width: 414px) {
+
+    .statistics-wrapper{
+        max-width: 414px;
+        padding: 30px 15px;
+    }
+    .statistics-column{
+        gap:2px;
+    }
+    .statistics svg{
+        width:35px;
+    }
+    .statistics-text-wrapper{
+        gap:2px;
+        display: flex;
+        align-items: center;
+    }
+    .number-text{
+        font-size:24px;
+    }
+    .statistics-description{
+        font-size:8px;
+        display: flex;
+        align-items: center;
+    }
+
+}

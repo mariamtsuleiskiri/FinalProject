@@ -2,6 +2,7 @@
     width: 100%;
 }
 .about-bottom-wrapper{
+    padding-top: 20px;
     max-width: 1200px;
 }
 .about-bottom-service{
@@ -10,7 +11,7 @@
     align-items: flex-start;
     gap: 20px;
     border-radius: 25px;
-    border: 1px solid var(--icon-background, #909DE2);
+    border: 1px solid #909DE2;
     margin-top: 46px;
     margin-left: 72px;
     margin-right: 72px;
@@ -68,4 +69,51 @@
     font-size: 16px;
     line-height: 24px;
     color:#555;
+}
+
+
+@media only screen and (max-width: 414px) {
+    .about-bottom-wrapper{
+        max-width: 414px;
+    }
+    .about-bottom-service{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding:10px;
+        gap:15px;
+
+    }
+    .about-column{
+        grid-column-gap: 7px;
+    }
+    .about-column-last{
+        grid-column-gap: 7px;
+    }
+    .about-svg{
+        width:22px;
+    }
+    .text-wrapper-one{
+        padding-top: 10px;
+        padding-right: 5px;
+        gap:10px;
+    }
+    .top-text{
+        font-size: 10px;
+    }
+    .clita-text{
+        font-size: 8px;
+        line-height: normal;
+    }
+    .text-wrapper-two{
+        padding-top: 10px;
+        padding-right: 5px;
+        gap:10px;
+    }
+    .text-wrapper-three{
+        padding-top: 10px;
+        padding-right: 5px;
+        gap:10px;
+    }
+
+
 }

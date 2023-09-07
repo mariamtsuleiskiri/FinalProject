@@ -1,3 +1,11 @@
+let menuButton = document.querySelector('.menu-button');
+let menu = document.querySelector('.menu-socials');
+
+menuButton.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+
+
 let slider= document.querySelector('.slider');
             let leftArrow= document.querySelector('.arrow-left');
             let rightArrow= document.querySelector('.arrow-right');
