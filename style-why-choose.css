@@ -4,7 +4,7 @@
 .why-choose-wrapper{
     padding-left: 70px;
     padding-right:80px;
-    max-width: 1200px;
+    max-width: 100%;
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 10px;

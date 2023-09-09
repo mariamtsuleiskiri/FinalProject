@@ -45,7 +45,7 @@ p{
     background-repeat: no-repeat;
     background-position: left top;
     height:697px;
-    max-width: 1200px;
+    max-width: 100%;
     position: relative;
 }
 header{

@@ -2,7 +2,7 @@
     width: 100%;
 }
 .about-bottom-wrapper{
-    max-width: 1200px;
+    max-width: 100%;
 }
 .about-bottom-service{
     display: grid;
