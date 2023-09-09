@@ -81,7 +81,7 @@
                             </ul>
                         </li>
                        
-                        <li><a href="#Contact">Contact </a></li>
+                        <li><a href="#Contact" id="openModalLink">Contact </a></li>
                     </ul>
                     <div class="social-icons">
                             <a href="#" class="facebook-icon">
@@ -128,6 +128,16 @@
                     explore more
                 </button>
                 
+            </div>
+            <div class="contact-modal" id="contactModal"> 
+                <span class="close" id="closeModal">&times;</span>
+                <div class="contact-modal-content">
+                    <h2>contact info</h2>
+                <span id="modalName"></span>
+                <span id="modalEmail"></span>
+                <span id="modalPhone"></span>
+                <span id="modalSubject"></span>
+            </div>
             </div>
             <div class="modal-clients" id="modalClients">
                 <div class="clients-content">
@@ -503,15 +513,15 @@
                     <div class="request-header">
                         <h2 class="jost">Request A Call-Back</h2>
                     </div>
-                    <form>
+                    <form id="form">
                         <div class="form-wrapper">
                             <div class="input-first-column">
-                                <input type="text" placeholder="Your Name" required>
-                                <input type="email" placeholder="Your Email" required>
+                                <input type="text" id="name" placeholder="Your Name" required>
+                                <input type="email" id="email" placeholder="Your Email" required>
                             </div>
                             <div class="input-second-column">
-                                <input type="tel" placeholder="Your Phone" required>
-                                <input type="text" placeholder="Your Subject" required>
+                                <input type="tel"  id="phoneNumber" placeholder="Your Phone" required >
+                                <input type="text" id="subject"  placeholder="Your Subject" required>
                             </div>
                             <div class="textarea-wrapper">
                                 <textarea class="textarea" placeholder="Message" required></textarea>

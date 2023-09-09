@@ -132,13 +132,13 @@ async function fetchAndDisplayServices(){
 let openModalBtn = document.getElementById("myBtn");
 openModalBtn.addEventListener('click', fetchAndDisplayServices);
 
-function closeModal() {
+function closeModalServices() {
   let modal = document.getElementById('modal');
   modal.style.display = 'none';
 };
 
 let closeModalBtn = document.getElementById("close");
-closeModalBtn.addEventListener('click', closeModal);
+closeModalBtn.addEventListener('click', closeModalServices);
 
 
 
@@ -190,7 +190,83 @@ let slider= document.querySelector('.slider');
             document.getElementById("defaultOpen").click();
 
 
-        
+            let phoneNumberInput = document.getElementById('phoneNumber');
+            let placeholderChanged = false;
+
+            phoneNumberInput.addEventListener('focus', function(){
+              if (!placeholderChanged){
+                phoneNumberInput.placeholder= '+995';
+                placeholderChanged = true;
+              }
+            });
+
+            phoneNumberInput.addEventListener('blur', function(){
+              if (phoneNumberInput.value === '+995'|| phoneNumberInput.value === ''){
+                phoneNumberInput.placeholder = 'Your Phone';
+                placeholderChanged = false;
+              }
+            });
+             document.getElementById('form').addEventListener('submit', function(event){
+              let phoneNumber = phoneNumberInput.value;
+              let phoneNumberPattern = /^\+995\d{9}$/;
+
+              if (!phoneNumberPattern.test(phoneNumber)){
+                alert('Please enter a valid phone number with +995 and 9 digits.');
+                event.preventDefault();
+              }
+             });
+
+
+             let myForm = document.getElementById('form');
+             let modalInfo = document.getElementById('contactModal');
+             let closeModalButton = document.getElementById('closeModal');
+             let modalName = document.getElementById('modalName');
+             let modalEmail = document.getElementById('modalEmail');
+             let modalPhone = document.getElementById('modalPhone');
+             let modalSubject = document.getElementById('modalSubject');
+
+             let name, email, phoneNumber, subject;
+
+             function openModal(){
+              modalInfo.style.display = 'block';
+              modalName.textContent = `Name: ${name}`;
+              modalEmail.textContent = `Email: ${email}`;
+              modalPhone.textContent = `Phone: ${phoneNumber}`;
+              modalSubject.textContent = `Subject: ${subject}`;
+             }
+
+             function closeModal(){
+              modalInfo.style.display = 'none';
+             }
+
+             myForm.addEventListener('submit', function(event){
+              event.preventDefault();
+              name= document.getElementById('name').value;
+              email= document.getElementById('email').value;
+              phoneNumber = document.getElementById('phoneNumber').value;
+              subject= document.getElementById('subject').value;
+
+              if (subject.length < 5) {
+                alert('Subject must be at least 5 characters long.');
+            } else {
+                openModal();
+            }
+             });
+             closeModalButton.addEventListener('click', closeModal);
+
+             let openModalLink = document.getElementById('openModalLink');
+             openModalLink.addEventListener('click', function(event){
+              event.preventDefault();
+              openModal();
+             });
+
+
+
+
+
+
+
+
             /*let myButton = document.getElementsByClassName("tabbutton");
             myButton.addEventListener("click",function(){
                 myButton.style.borderBottom = "none";
