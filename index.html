@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div class="header-left">
-                <button class="welcome-button">
+                <button class="welcome-button" id="clientsBtn">
                     Welcome to Finanza
                 </button>
                 <div class="financial-header">
@@ -124,9 +124,36 @@
                     </h1>
                 </div>
                 
-                <button class="explore-more-button">
+                <button class="explore-more-button" id="myBtn">
                     explore more
                 </button>
+                
+            </div>
+            <div class="modal-clients" id="modalClients">
+                <div class="clients-content">
+                    <span class="close" id="closeClients">&times;</span>
+                    <h2>clients</h2>
+                    <ul id="clientsList"></ul>
+                </div>
+            </div>
+ 
+            <div id="confirmModal" class="confirm-modal">
+                <div class="confirm-modal-content">
+                    <h2>Delete Client?</h2>
+                    <p>Are you sure you want to delete this client?</p>
+                    <div class="button-container">
+                        <button id="confirmYesButton" onclick="confirmDeleteClient()">Yes</button>
+                        <button id="confirmNoButton" onclick="closeConfirmModal()">No</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <h2 class="jost">Services List</h2>
+                    <ul id="serviceList"></ul>
+                </div>
             </div>
             </header>
             <div class="slider-container">
@@ -249,7 +276,7 @@
                         </svg>
                     </div>
                     <div class="statistics-text-wrapper">
-                        <div class="number-text"><p>1234</p></div>
+                        <div class="number-text" id="clientCountExternal"><p>1234</p></div>
                         <div class="statistics-description"><p>Happy Clients</p></div>
                     </div>
                     <div class="statistics-line-svg">
