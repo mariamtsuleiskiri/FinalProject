@@ -26,10 +26,11 @@ async function fetchAndDisplayClients(){
     clients.forEach((client) => {
       let li = document.createElement('li');
       li.textContent = `Name : ${client.name}, Email: ${client.email}`;
-
+      li.setAttribute('data-client-id', client.id);
       let deleteButton = document.createElement('button');
       deleteButton.textContent = 'delete';
       deleteButton.classList.add('delete-button');
+      deleteButton.setAttribute('data-client-id', client.id);
       li.appendChild(deleteButton);
 
       clientsList.appendChild(li);
@@ -69,6 +70,14 @@ function confirmDeleteClient(){
   let clientId = confirmModal.getAttribute('data-client-id');
   console.log(`deleted client with id: ${clientId}`);
 
+  let clientItem = document.querySelector(`li[data-client-id="${clientId}"]`);
+  if (clientItem){
+    clientItem.remove();
+    updateClientCount();
+  }else{
+    console.log(`client with id ${clientId} not found `);
+  }
+
   closeConfirmModal();
   closeClientModal();
 }
@@ -86,6 +95,12 @@ openClientsModalBtn.addEventListener('click', fetchAndDisplayClients);
 
 let closeClientsModalBtn = document.getElementById("closeClients");
 closeClientsModalBtn.addEventListener('click', closeClientModal);
+
+function updateClientCount(){
+  let clientsList = document.getElementById('clientsList');
+  let clientCount = clientsList.children.length;
+  clientCountExternal.textContent = `${clientCount}`;
+}
 
 
 
