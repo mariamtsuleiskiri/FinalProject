@@ -5,8 +5,9 @@
     display: grid;
     grid-template-columns: auto 1fr;
     padding-left: 72px;
-    padding-right: 36px;
+    padding-right: 70px;
     max-width: 1200px;
+    padding-bottom: 20px;
 }
 .image-container{
     width: 559px;
@@ -29,7 +30,7 @@
 }
 .h2-about{
     align-self: stretch;
-    font-size: 44px;
+    font-size: 2.4rem;
     color:#011A41;
     flex:1;
     max-width: 100%;
@@ -42,6 +43,7 @@
     font-size: 16px;
     line-height:24px;
     color:#555;
+    text-align: justify;
 }
 
 .tab{
@@ -73,10 +75,11 @@
 .tabcontent{
     display:flex;
     border:none;
-    padding-right:28px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
     color:#555;
+    font-size: 0.9rem;
+    text-align: justify;
 }
 @-webkit-keyframes fadeEfffect {
     from {opacity:0;}
@@ -145,9 +148,82 @@
         padding:12px;
     }
 
+}
 
-
-
+@media only screen and (min-width:415px) and (max-width: 768px) {
+    .about-content-wrapper{
+        max-width: 768px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 35px;
+        grid-column-gap: 10px;
+        padding-bottom: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-container{
+        width:300px;
+        height: 450px;
+    }
+    .about-right-wrapper{
+        width:85vw;
+    }
+    .image-container img{
+        width:100vw;
+        height:500px;
+      
+    }
+    .about-header{
+        width:90vw;
+    }
+    .h2-about{
+        font-size: 1.7rem;
+    }
+    .tabcontent{
+        font-size:12px;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1000px) {
+    .about-content-wrapper{
+        max-width:1000px;
+        padding-left: 30px;
+        padding-right: 45px;
+        grid-column-gap: 10px;
+        padding-bottom: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-container{
+        width: 50vw;
+        height: 500px;
+    }
+    .image-container img{
+        width:50vw;
+        height: 500px;
+        transform: translate(0);
+    }
+    .about-right-wrapper{
+        gap:12px;
+        margin-top:0px;
+        padding-top: 80px;
+    }
+    .about-header{
+        width:38vw;
+    }
+    .h2-about{
+        font-size: 1.3rem;
+    }
+    .about-p{
+        font-size: 0.8rem;
+        width:38vw;
+    }
+    .tab button{
+        font-size: 0.9rem;
+    }
+    .tabcontent{
+        width:38vw;
+        padding-right: 0;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
 
 
 }

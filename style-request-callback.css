@@ -25,8 +25,9 @@
     border: 1px solid var(--Icon-background, #909DE2);
     gap:20px;
     padding:50px;
-    top:117px;
-    left:245px;
+    transform: translate(39% , -50%);
+    flex-wrap: wrap;
+    flex: 1 0 0;
 }
 input{
     display: flex;
@@ -34,7 +35,7 @@ input{
     padding: 15px 1px 15px 10px;
     align-items: center;
     gap: 10px;
-    flex: 1 0 0;
+    flex:1 0 0;
     border-radius: 5px;
     border: 1px solid var(--Icon-background, #909DE2);
 
@@ -43,6 +44,7 @@ input{
     display:flex;
     gap:20px;
     flex-direction: column;
+    width:45vw;
 
 }
 .input-first-column{
@@ -62,7 +64,7 @@ textarea{
     resize:none;
 }
 .textarea{
-    width:608px;
+    width:45vw;
     height:108px;
     display:flex;
     gap:10px;
@@ -91,14 +93,17 @@ textarea{
         padding-top: 25px;
         padding-bottom: 30px;
         gap:10px;
-        width:387px;
+        width:70vw;
+        transform: translate(18%, -2%);
     }
     .request-header{
-        font-size: 20px;
+        font-size: 1rem;
     }
-    form{
-        width: 250px;
-
+    .form-wrapper{
+        width: 55vw;
+    }
+    .textarea{
+        width:55vw;
     }
     .input-first-column{
         flex-direction: column;
@@ -106,8 +111,73 @@ textarea{
     .input-second-column{
         flex-direction: column;
     }
+
+}
+@media only screen and (min-width:415px) and (max-width:768px){
+    .request-callback-wrapper{
+        max-width:100%;
+    }
+    .request-main{
+        display: flex;
+        padding:15px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        gap:10px;
+        transform: translate(15%,5%);
+        padding: 20px;
+        width:auto;
+        max-width: 100%;
+        top:0;
+        left:0;
+        flex: 1 0 0;
+        width:75vw;
+    }
+    .request-header{
+        font-size: 1.2rem;
+    }
+    form{
+        width:45vw;
+    }
     .textarea{
-        width:250px;
+        width:45vw;
+    }
+    .input-first-column{
+        flex-direction: column;
+    }
+    .input-second-column{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1000px){
+    .request-callback-wrapper{
+        max-width:100%;
+        height: 600px;
+    }
+    .request-main{
+        display: flex;
+        padding-bottom: 10px;
+        gap:10px;
+        transform: translate(16%,10%);
+        padding: 20px;
+        padding-top: 40px;
+        top:0;
+        left:0;
+        width:75vw;
+        height:60vh;
+        justify-content: start;
+    }
+    .request-header{
+        font-size: 1.2rem;
+    }
+    
+    .form-wrapper{
+        width:70vw;
+        height: 35vh;
+
+    }
+    .textarea{
+        width:70vw;
     }
 
 }

@@ -2,13 +2,12 @@
     width: 100%;
 }
 .about-bottom-wrapper{
-    padding-top: 20px;
     max-width: 1200px;
 }
 .about-bottom-service{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px;
-    align-items: flex-start;
     gap: 20px;
     border-radius: 25px;
     border: 1px solid #909DE2;
@@ -17,60 +16,34 @@
     margin-right: 72px;
 }
 .about-column{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: stretch;
-    grid-column-gap: 13px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
     border-right: 1px solid var(--Icon-background, #909DE2);
+    padding-right:10px;
 }
 .about-column-last{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: stretch;
-    grid-column-gap: 13px;
-}
-.about-svg{
     display: flex;
-    flex-direction:row;
+    gap:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 10px;
 }
-.text-wrapper-one{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 17px;
-    flex: 1 0 0;
-    padding-right:29px;
+.about-svg svg{
+    width:5vw;
 }
-.text-wrapper-two{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 17px;
-    flex: 1 0 0;
-    padding-right:15px;
-}
-.text-wrapper-three{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 17px;
-    flex: 1 0 0;
-    padding-right:5px;
-}
-
 .top-text{
-    display: flex;
-    align-items:center;
-    font-size: 24px;
+    font-size:1.4rem;
+    flex:2;
+    align-self: center;
 }
 .clita-text{
-    display: flex;
-    align-items: last baseline;
-    font-size: 16px;
-    line-height: 24px;
+    font-size:0.9rem;
     color:#555;
+    flex-basis: 100%;
+    padding-left:55px;
 }
-
 
 @media only screen and (max-width: 414px) {
     .about-bottom-wrapper{
@@ -81,39 +54,104 @@
         margin-right: 15px;
         padding:10px;
         gap:15px;
-
     }
     .about-column{
-        grid-column-gap: 7px;
+        gap:6px;
     }
     .about-column-last{
-        grid-column-gap: 7px;
-    }
-    .about-svg{
-        width:22px;
-    }
-    .text-wrapper-one{
-        padding-top: 10px;
-        padding-right: 5px;
-        gap:10px;
+        gap:6px;
     }
     .top-text{
-        font-size: 10px;
+        font-size:0.6rem;
     }
     .clita-text{
         font-size: 8px;
         line-height: normal;
+        padding-left:0;
     }
-    .text-wrapper-two{
-        padding-top: 10px;
-        padding-right: 5px;
-        gap:10px;
+    .about-svg{
+        height: 5vw;
     }
-    .text-wrapper-three{
-        padding-top: 10px;
-        padding-right: 5px;
-        gap:10px;
+    .about-svg svg{
+        height:5vw;
+        width:6vw;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width:768px){
+    .about-bottom-wrapper{
+        max-width: 768px;
+    }
+    .about-bottom-service{
+        margin-left: 25px;
+        margin-right: 25px;
+        padding:15px;
+        gap:15px;
+    }
+    .about-svg{
+        height:5vw;
+        width:5vw;
+        align-self: center;
+    }
+    .about-svg svg{
+        height:5vw;
+        width:5vw;
+    }
+    .about-column{
+        padding-right:5px;
+        gap:5px;
+    }
+    .about-column-last{
+        padding-right:0;
+        gap:5px;
+    }
+    .top-text{
+        font-size:0.7rem;
+        align-self: center;
+    }
+    .clita-text{
+        font-size: 0.5rem;
+        line-height: normal;
+        padding-left: 5px;
     }
 
-
+}
+@media only screen and (min-width: 769px) and (max-width:1000px){
+    .about-bottom-wrapper{
+        max-width: 1000px;
+    }
+    .about-bottom-service{
+        margin-left: 45px;
+        margin-right: 45px;
+        padding:15px;
+        gap:15px;
+    }
+    .about-svg{
+        height:5vw;
+        width:6vw;
+        align-self: center;
+    }
+    .about-svg svg{
+        height:5vw;
+        width:5vw;
+    }
+    .about-column{
+        padding-left:10px;
+        padding-right:10px;
+        gap:5px;
+    }
+    .about-column-last{
+        padding-left: 10px;
+        padding-right:0;
+        gap:5px;
+    }
+    .top-text{
+        font-size:1rem;
+        align-self: center;
+    }
+    .clita-text{
+        font-size: 0.7rem;
+        line-height: normal;
+        padding-left: 50px;
+    }
 }

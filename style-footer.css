@@ -158,3 +158,79 @@ footer{
         flex-direction: column;
     }
 }
+@media only screen and (min-width:415px) and (max-width:768px) {
+        footer{
+            max-width: 768px;
+        }
+        .information-footer{
+            padding-left: 20px;
+            padding-right: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            padding-top: 20px;
+            grid-row-gap:20px;
+            grid-column-gap:10px ;
+            padding-bottom: 35px;
+        }
+        .information-column-one{
+            padding-right: 0;
+            height: 100px;
+            justify-self: center;
+        }
+        .social-icons-footer{
+            gap:5px;
+        }
+        .information-column-two{
+            justify-self: center;
+        }
+        .information-column-three{
+            justify-self: center;
+        }
+        .information-footer p{
+            font-size: 10px;
+        }
+        .information-column-four{
+            grid-column: span 3;
+        }
+        .copyright-footer{
+            padding:20px 15px;
+            font-size: 10px;
+            gap:10px;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (min-width:769px) and (max-width:1000px) {
+        footer{
+            max-width: 1000px;
+        }
+        .information-footer{
+            padding-left: 35px;
+            padding-right: 35px;
+            grid-template-columns: repeat(4, 1fr);
+            padding-top: 25px;
+            grid-row-gap:20px;
+            grid-column-gap:15px ;
+            padding-bottom: 35px;
+        }
+        .information-column-one{
+            justify-self: center;
+        }
+        .information-column-two{
+            justify-self: center;
+        }
+        .information-column-three{
+            justify-self: flex-start;
+        }
+        .information-column-four{
+            grid-column: span 1;
+        }
+        .copyright-footer{
+            padding:20px 30px;
+            font-size: 12px;
+            gap:10px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }

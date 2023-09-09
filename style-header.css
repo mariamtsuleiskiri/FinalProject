@@ -62,7 +62,6 @@ address{
     border-bottom: 1px solid rgba(0, 0, 0, 0.01);
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.11);
     justify-content: space-between;
-    gap:300px;
 }
 .open-sans{
     font-family: 'Open Sans', sans-serif;
@@ -140,7 +139,6 @@ address{
     justify-content: space-between;
     align-items: end;
     padding-top: 25px;
-    gap:200px;
 
 }
 .finanza{
@@ -159,7 +157,6 @@ address{
 }
 .main-menu{
     display: flex;
-    width: 620px;
     height: 50px;
     align-items: center;
     gap: 61px;
@@ -187,7 +184,6 @@ address{
     margin:0;
     padding: 0;
     display: flex;
-    width: 424px;
     align-items: center;
     gap: 15px;
     flex-shrink: 0;
@@ -270,6 +266,9 @@ ellipse{
     fill:#FFF;
     transition:fill 0.3s ease-in-out;
 }
+a:visited{
+    color:#355EFC;
+}
 
 .header-left{
    display: inline-flex;
@@ -340,25 +339,26 @@ ellipse{
 .first-slider-image{
     display: flex;
     transform: scaleX(-1);
-    width:853px;
-    height:550px;
+    width:45vw;
+    height:450px;
     flex-shrink: 0;
 }
 .second-slider-image{
     display:flex;
-    width:750px;
-    height:450px;
-    transform:translate(74px, 90px)
+    width:50vw;
+    height:410px;
+    transform:translate(0)
 }
 .third-slider-image{
     display:flex;
-    width:800px;
-    transform:translateX(253px);
+    width:50vw;
+    height:450px;
+    transform:translateX(0);
 }
 .fourth-slider-image{
     display: flex;
-    transform: translate(135px ,7px);
-    width:560px;
+    transform: translate(0);
+    width:40vw;
     height:430px;
 }
 .welcome-button{
@@ -376,9 +376,8 @@ ellipse{
     line-height: 24px;
 }
 .financial-header{
-    width: 740px;
-    font-size: 40px;
-    line-height: 96px;
+    width:56vw;
+    font-size: 2.1rem;
     font-weight: 700;
     font-family: Open Sans;
 }
@@ -398,6 +397,11 @@ ellipse{
     line-height: 24px;
     font-weight: 300;
 }
+
+
+
+
+
 @media only screen and (max-width: 414px) {
     .header-div{
         max-width: 414px;
@@ -604,23 +608,366 @@ ellipse{
         width:30px;
     }
     .first-slider-image{
-        width: 350px;
-        height:220px;
+        width: 45vw;
+        height:180px;
         transform:scaleX(-1);
     }
     .second-slider-image{
-        width:340px;
-        height: 220px;
-        transform: translateX(35px) translateY(20px);
+        width:45vw;
+        height: 180px;
+        transform: translateX(0) translateY(0);
     }
     .third-slider-image{
-        width:380px;
-        transform:translateX(122px);
+        width:50vw;
+        height:195px;
+        transform:translateX(0);
     }
     .fourth-slider-image{
-        width:260px;
-        transform:translateX(70px);
+        width:42vw;
+        height:180px;
+        transform:translateX(0);
         height:200px;
     }
 
+}
+
+@media only screen and (min-width: 415px) and (max-width:768px){
+    .header-div{
+        max-width: 768px;
+    }
+    .head-wrapper{
+        max-width:768px;
+        background-color: #ffffff;
+        background-image: url(hero\ shape.png);
+        background-size:500px 550px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: relative;
+        height:600px;
+    }
+    address{
+        padding-top: 10px;
+        display:flex;
+        gap:0;
+        padding-left:25px;
+        padding-right:25px;
+        flex-direction: row;
+        align-items:center;
+        font-size:8px;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-content: center;
+    }
+    .location-active-component{
+        gap:15px;
+    }
+    .info-component{
+        gap:15px;
+    }
+    .location p{
+        width:auto;
+    }
+    .location-active-component p{
+        font-size:0.8rem;
+    }
+    .info-component p{
+        font-size: 0.8rem;
+    }
+    .phone{
+        font-size: 0.8rem;
+    }
+    header{
+        max-width: 768px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .logo-menu-wrapper{
+        padding-top: 15px;
+        gap:2px;
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        align-items: center;
+    }
+    
+    .finanza{
+        margin-left: 0;
+        padding-left:0px;
+    }
+    .menu-socials{
+        display:none;
+    }
+    a:visited{
+        color:#355EFC;
+    }
+    .menu{
+        
+        justify-content: flex-start;
+    }
+    .menu-button{
+        display:flex;
+    }
+    .main-menu{
+        padding-left:12px;
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+        width:auto;
+        justify-content: space-between;
+    }
+    .show-menu{
+        display: flex;
+        flex-direction: column;
+        z-index:1;
+    }
+    .show-menu li{
+        margin:10px 0;
+    }
+    .show-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: #fff;
+        padding: 15px;
+        width:100%;
+        border-radius: 5px;
+        border: 1px solid #355EFC;
+    }
+    .dropdown{
+        position:relative;
+    }
+    .dropdown .dropdown-content{
+        display:none;
+        position:absolute;
+        top:100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .dropdown:hover .dropdown-content{
+        display: flex;
+
+    }
+    .show menu .social-icons{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .header-left{
+        padding-top: 25px;
+        padding-left:15px;
+        max-width:768px;
+        gap:25px;
+        padding-bottom:50px;
+    }
+    .financial-header{
+        font-size: 1.5rem;
+    }
+    .welcome-button{
+        font-size:14px;
+        padding:8px;
+    }
+    .financial-header{
+        width:56vw;
+        line-height: normal;
+    }
+    .explore-more-button{
+        font-size:14px;
+        padding:9px;
+    }
+    .carousel{
+        height:300px;
+
+    }
+    .slider section{
+        flex-basis:100%;
+    }
+    .controls .arrow-left{
+        width:30px;
+    }
+    .controls .arrow-right{
+        width:30px;
+    }
+    .carousel{
+        height:400px;
+    }
+    .first-slider-image{
+        max-width: 100%;
+        width:50vw;
+        height: auto;
+    }
+    .second-slider-image{
+        max-width: 100%;
+        width:50vw;
+        height: auto;
+        transform: translateX(0);
+    }
+    .third-slider-image{
+        transform: translate(0);
+        width:55vw;
+        height: auto;
+    }
+    .fourth-slider-image{
+        transform: translate(0);
+        width:43vw;
+        height: auto;
+    }
+    .controls .arrow-left{
+        top:50%;
+
+    }
+    .controls .arrow-right{
+        top:46%;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width:1000px){
+    .header-div{
+        max-width:1000px;
+    }
+    .head-wrapper{
+        max-width:1000px;
+        background-color: #ffffff;
+        background-image: url(hero\ shape.png);
+        background-size:500px 550px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: relative;
+        height:600px;
+    }
+    address{
+        padding-top: 10px;
+        display:flex;
+        gap:0;
+        padding-left:25px;
+        padding-right:25px;
+        flex-direction: row;
+        align-items:center;
+        font-size:8px;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-content: center;
+    }
+    .location-active-component{
+        gap:15px;
+    }
+    .info-component{
+        gap:15px;
+    }
+    .location p{
+        width:auto;
+    }
+    .location-active-component p{
+        font-size:0.8rem;
+    }
+    .info-component p{
+        font-size: 0.8rem;
+    }
+    .phone{
+        font-size: 0.8rem;
+    }
+    header{
+        max-width:1000px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .logo-menu-wrapper{
+        padding-top: 15px;
+        gap:0;
+        display: flex;
+        flex-direction: row;
+        position:relative;
+        align-items: center;
+    }
+    
+    .finanza{
+        margin-left: 0;
+        padding-left:0px;
+    }
+    a:visited{
+        color:#355EFC;
+    }
+    .menu{
+        width:48vw;
+    }
+    .main-menu{
+        padding-left:12px;
+        display:flex;
+        flex-direction:row;
+        gap:20px;
+        width:auto;
+        justify-content: space-between;
+    }
+    .header-left{
+        padding-top: 35px;
+        padding-left:25px;
+        max-width:768px;
+        gap:25px;
+        padding-bottom:50px;
+    }
+    .financial-header{
+        font-size: 1.5rem;
+    }
+    .welcome-button{
+        font-size:14px;
+        padding:8px;
+    }
+    .financial-header{
+        width:56vw;
+        line-height: normal;
+    }
+    .explore-more-button{
+        font-size:14px;
+        padding:9px;
+    }
+    .carousel{
+        height:300px;
+
+    }
+    .slider section{
+        flex-basis:100%;
+    }
+    .carousel{
+        height:400px;
+    }
+    .first-slider-image{
+        max-width: 100%;
+        width:50vw;
+        height:360px;
+    }
+    .second-slider-image{
+        max-width: 100%;
+        width:50vw;
+        height: auto;
+        transform: translateX(0);
+    }
+    .third-slider-image{
+        transform: translate(0);
+        width:55vw;
+        height:370px;
+    }
+    .fourth-slider-image{
+        transform: translate(0);
+        width:43vw;
+        height: auto;
+    }
+    .controls .arrow-left{
+        top:50%;
+        width:40px;
+
+    }
+    .controls .arrow-right{
+        top:46%;
+        width:40px;
+
+    }
 }

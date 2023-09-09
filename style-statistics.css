@@ -66,3 +66,20 @@
     }
 
 }
+
+@media only screen and (min-width: 415px) and (max-width:768px) {
+    .statistics-wrapper{
+        max-width:768px ;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .statistics-description{
+        font-size:0.8rem;
+    }
+    .number-text{
+        font-size: 2.5rem;
+    }
+    .statistics-column{
+        text-align: center;
+    }
+}
